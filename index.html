@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/responsive-style.css">
+    <script src="https://kit.fontawesome.com/8656ee0648.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!---------------------------- Header Section --------------------------------------->
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><span class="logo-color">N</span>oor.</a>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                
+            </nav>
+            <div class="header-content">
+                <p>WP Theme Developer</p>
+                <h1>Hello! This is <span class="logo-color">Noor</span><br>Welcome to my Portfolio.</h1>
+            </div> 
+        </div>
+    </header>
+
+    <!---------------------------- About Me Section --------------------------------------->
+
+    <section id="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="about-me-col-1">
+                    <img src="./assets/img/about-me.jpg" alt="">
+                </div>
+                <div class="about-me-col-2">
+                    <h1 class="content-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis nobis laborum dolor impedit? Deleniti aut tempore odio commodi distinctio eligendi, impedit laborum sequi ducimus eveniet fuga iure provident eos possimus, aliquam debitis asperiores similique nostrum non modi, veritatis adipisci esse neque cum! Deleniti recusandae voluptatibus quia, perferendis veritatis eaque.</p>
+
+                    <ul>
+                        <li class="about-me-tab active-tab" onclick="openTab('experience')">Experience</li>
+                        <li class="about-me-tab" onclick="openTab('skills')">Skills</li>
+                        <li class="about-me-tab" onclick="openTab('education')">Education</li>
+                    </ul>
+                    <div class="about-me-tab-contents active-tab-content" id="experience">
+                        <ul>
+                            <li><span class="logo-color">Fontend</span><br>Experience in Developing Customized &amp; Responsive Frontend Application using HTML, CSS &amp; Javascript.</li>
+                            <li><span class="logo-color">WordPress Theme Development</span><br>Experience in Building Performance Optimized Custom WordPress Themes.</li>
+                            <li><span class="logo-color">WordPress Plugin Development</span><br>Have Experience in Creating WordPress Plugin to boost automation in clients' website.</li>
+                        </ul>
+                    </div>
+                    <div class="about-me-tab-contents" id="skills">
+                        <ul>
+                            <li><span class="logo-color">Web Development</span><br>Skilled in Fullstack (Frontend &amp; Backend) Web Development with HTML, CSS &amp; Javascript</li>
+                            <li><span class="logo-color">WordPress Theme Development</span><br>Skilled in Developing WordPress Theme</li>
+                            <li><span class="logo-color">WordPress Plugin Development</span><br>Skilled in Developing WordPress Plugin</li>
+                        </ul>
+                    </div>
+                    <div class="about-me-tab-contents" id="education">
+                        <ul>
+                            <li><span class="logo-color">SSC</span><br>Secondary School Certificate</li>
+                            <li><span class="logo-color">HSC</span><br>Higher Secondary Certificate</li>
+                            <li><span class="logo-color">Bachelor's</span><br>Bachelor Degree</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------- Services Section --------------------------------------->
+
+    <section id="services">
+        <div class="container">
+            <h1 class="content-title">Projects</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repudiandae excepturi animi odit voluptate sapiente molestias, culpa fuga quaerat similique adipisci numquam, alias beatae sed!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-wordpress-simple"></i>
+                    <h2>Theme Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repudiandae excepturi animi odit voluptate sapiente molestias, culpa fuga quaerat similique adipisci numquam, alias beatae sed!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h2>Plugin Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repudiandae excepturi animi odit voluptate sapiente molestias, culpa fuga quaerat similique adipisci numquam, alias beatae sed!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------- Contact Me Section --------------------------------------->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-me-col-1">
+                    <h1 class="content-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> contact@email.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 01714569873</p>
+                    <div class="social-links">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-me-col-2">
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Your Full Name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <label for="number">Phone Number</label>
+                        <input type="number" name="number" placeholder="Your Phone Number">
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>Quick Links</h3>
+            <div class="row">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#header">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">&copy; Noor | 2025</div>
+    </footer>
+
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <script src="./scripts/app.js"></script>
+
+</body>
+</html>
